@@ -25,12 +25,3 @@ artifacts:
 - path: '\*.zip'
   name: zip
 
-deploy:
-- provider: GitHub
-  tag: v$(appveyor_build_version)
-  release: v$(appveyor_build_version)
-  auth_token:
-    secure: rqt6SiJaFS7qgPo55+zvwWonpmdZPjC8+/hB//2Fciy6zte12E/t39VbVnXFNDgG
-  artifact: zip
-  draft: true
-  prerelease: true
